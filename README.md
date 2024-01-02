@@ -18,8 +18,7 @@ GOTO는 프로그래밍 언어에서 제공하는 제어문 중 하나이다. GO
 ```c
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     int i = 0;
     int j = 0;
 
@@ -39,8 +38,7 @@ int main(void)
 ```c
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     int i = 0;
     int j = 0;
 

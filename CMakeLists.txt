@@ -4,8 +4,16 @@ project(IsGotoHarmful)
 
 include_directories(include)
 
-file(GLOB SOURCES "src/*.cpp")
-add_executable(hashmap ${SOURCES})
+file(GLOB SOURCES "src/*.c")
+# add_executable(hashmap ${SOURCES})
 
-file(GLOB SOURCES_GOTO "src-goto/*.cpp")
-add_executable(hashmap-goto ${SOURCES_GOTO})
+# file(GLOB SOURCES_GOTO "src-goto/*.c")
+# add_executable(hashmap-goto ${SOURCES_GOTO})
+
+enable_testing()
+
+add_executable(hashtest tests/hashtest.c ${SOURCES})
+# add_executable(maptest tests/maptest.c)
+
+add_test(NAME hashtest COMMAND hashtest)
+# add_test(NAME maptest COMMAND maptest)
