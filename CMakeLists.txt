@@ -13,7 +13,7 @@ file(GLOB SOURCES "src/*.c")
 enable_testing()
 
 add_executable(hashtest tests/hashtest.c ${SOURCES})
-# add_executable(maptest tests/maptest.c)
+add_executable(maptest tests/maptest.c ${SOURCES})
 
 add_test(NAME hashtest COMMAND hashtest)
-# add_test(NAME maptest COMMAND maptest)
+add_test(NAME maptest COMMAND maptest)
